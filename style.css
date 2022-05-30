@@ -1,0 +1,158 @@
+/* Screen readers skip to content link  */
+.visually-hidden {
+  width: 2px;
+  height: 2px;
+  overflow: hidden;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  white-space: nowrap;
+}
+
+/* Global styles  */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Navigation  */
+
+.nav,
+.nav-mobile {
+  position: relative;
+  min-height: 2rem;
+  background-color: #fff;
+  z-index: 2;
+}
+
+@media (max-width: 970px) {
+  .nav {
+    display: none;
+  }
+}
+
+.nav-mobile p {
+  margin: 0;
+  padding: 0.5rem 0;
+}
+@media (min-width: 971px) {
+  .nav-mobile {
+    display: none;
+  }
+}
+
+.hamburger-menu {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.menu-bar1,
+.menu-bar2 {
+  width: 25px;
+  height: 2px;
+  background-color: #222;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+.menu-bar1.active {
+  transform: rotate(-45deg) translate(-0.1rem, 0.1rem);
+}
+
+.menu-bar2.active {
+  transform: rotate(45deg) translate(-0.1rem, -0.1rem);
+}
+
+.menu-mobile {
+  display: none;
+}
+
+.menu-mobile.active {
+  position: relative;
+  min-height: calc(50vh + 2rem);
+  display: block;
+  transition: min-height 0.5s ease-in-out;
+  z-index: 10;
+}
+
+.nav-items {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+}
+@media (max-width: 970px) {
+  .nav-items {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+}
+
+.nav-item {
+  position: relative;
+  font-family: "Cormorant", sans-serif;
+  font-size: clamp(0.8rem, 0.9vw, 1.8rem);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.nav-item::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  background-color: #222;
+}
+.nav-item:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+@media (max-width: 970px) {
+  .nav-item {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+  }
+}
+
+.logo {
+  font-family: "Forum", sans-serif;
+  font-size: clamp(1.4rem, 1.4vw, 3.6rem);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 1rem 0;
+}
+.logo span {
+  display: block;
+  font-weight: bold;
+}
+@media (max-width: 970px) {
+  .logo {
+    font-size: 1rem;
+  }
+}
