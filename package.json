@@ -1,0 +1,17 @@
+{
+  "name": "danka-dzurisova-photography",
+  "version": "1.0.0",
+  "description": "One page website about photography",
+  "main": "index.js",
+  "source": "index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },  
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "author": "Pawel Komorkiewicz",
+  "license": "ISC"
+}
