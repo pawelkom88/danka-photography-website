@@ -365,3 +365,61 @@ picture img:hover {
   transition: transform 0.6s ease-in-out, filter 0.6s ease-in-out;
   filter: brightness(70%);
 }
+
+/* Contact  */
+
+h3 {
+  font-family: "Cormorant", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  margin: 2rem;
+}
+
+.availability {
+  text-align: center;
+  font-style: italic;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  font-family: "Forum", sans-serif;
+}
+
+input,
+textarea {
+  font-family: "Cormorant", sans-serif;
+  border: none;
+  border-bottom: 1px solid #222;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  opacity: 0.8;
+  text-indent: 0.2rem;
+}
+
+textarea {
+  padding-top: 5rem;
+}
+
+input {
+  padding: 0.6rem;
+}
+
+label {
+  margin: 2rem 0 0.5rem 0;
+}
+
+.btn-submit {
+  display: inline-block;
+  max-width: 8rem;
+  margin: 1rem auto;
+  border: 1px solid #222;
+}
+
+.btn-submit:hover {
+  border: 1px solid #222;
+  color: #222;
+  background: transparent;
+}
