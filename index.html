@@ -12,6 +12,7 @@
       rel="stylesheet" />
     <!-- Custom stylesheet -->
     <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
     <title>Danka Dzurisova Photography</title>
   </head>
   <body>
@@ -35,7 +36,8 @@
               href="https://www.instagram.com/danka_dzurisova_photography/"
               rel="noreferrer"
               target="_blank"
-              >Instagram</a>
+              >Instagram</a
+            >
           </li>
           <li class="nav-item">
             <a href="#contact">Contact</a>
@@ -65,7 +67,8 @@
               href="https://www.instagram.com/danka_dzurisova_photography/"
               rel="noreferrer"
               target="_blank"
-              >Instagram</a>
+              >Instagram</a
+            >
           </li>
           <li class="nav-item">
             <a class="link" rel="canonical" href="#contact">Contact</a>
@@ -231,6 +234,58 @@
           </picture>
         </div>
       </section>
+      <section id="contact" class="container">
+        <header>
+          <h2>Get in touch</h2>
+        </header>
+        <div class="hr"></div>
+        <div class="wrapper">
+          <div class="col-1">
+            <header>
+              <h3>I cannot wait to hear from you</h3>
+            </header>
+            <p>
+              Photography is an art of observation. It’s about finding something
+              or someone interesting in an ordinary place. My goal is to show
+              the beauty, grace of the nature.
+            </p>
+            <div class="hr"></div>
+            <p class="contact-details">
+              If you like what I am doing, please feel free to contact myself
+              with any queries or to schedule a session. You can use a form on
+              my website or email me directly
+              <a href="mailto:danka.dzurisova@gmail.com"
+                >danka.dzurisova@gmail.com</a
+              >
+            </p>
+            <div class="hr"></div>
+            <p class="availability">
+              Located in Newport, available in the UK to capture your life
+              story.
+            </p>
+          </div>
+          <div class="col-2">
+            <form
+              class="form"
+              action="https://formspree.io/f/xvollbeg"
+              method="POST">
+              <label for="name">Name:</label>
+              <input id="name" type="text" name="name" />
+              <label for="e-mail">E-mail:</label>
+              <input id="e-mail" type="email" required name="email" />
+              <label for="message">Your message:</label><br />
+              <textarea id="message" name="message'"></textarea>
+              <button type="submit" class="btn-submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
+    <!-- Footer -->
+    <footer>
+      <div class="container footer">
+        <small class="copyright"></small>
+      </div>
+    </footer>
   </body>
 </html>
