@@ -12,7 +12,7 @@ It's a so-called weekender project. Simple one-page website about photography. I
 
 ## Demo
 
-<a href="dankadzurisovaphotography.netlify.app/"  rel="noreferrer" target="_blank">Link to website</a>
+<a href="https://dankadzurisovaphotography.netlify.app/"  rel="noreferrer" target="_blank">Link to website</a>
 
 ## How I worked on this project
 
