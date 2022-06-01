@@ -7,11 +7,15 @@
 </div>
 
 ## About The Project
+
 It's a so-called weekender project. Simple one-page website about photography. I wanted to help my colleague with her first steps in photography. She always wanted to have a portfolio online.
+
 ## Demo
+
 <a href='dankadzurisovaphotography.netlify.app/'>Link to website</a>
 
 ## How I worked on this project
+
 - Semantic HTML and focus on accessibility
 
 - Responsive CSS using modern css syntax
@@ -27,4 +31,5 @@ It's a so-called weekender project. Simple one-page website about photography. I
 - I followed Lighhouse advice regarding SEO, best practices and performance
 
 ## Why I built the project this way
+
 In simple projects like this one, HTML, CSS, JS are the best tools for the job. It was a good chance to cement basic knowlegde and git commands.
