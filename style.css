@@ -20,6 +20,14 @@ body {
   line-height: 1.4;
 }
 
+.hidden {
+  overflow: hidden;
+}
+
+.visible {
+  display: block;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -446,4 +454,72 @@ footer div {
 .footer div {
   max-width: 800px;
   background: #fff;
+}
+
+/* Images gallery  */
+
+.backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.backdrop::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(3px);
+}
+
+.backdrop small {
+  position: fixed;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.close-btn {
+  top: 2rem;
+  right: 4rem;
+}
+
+.gallery {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.current-image {
+  width: 100%;
+}
+
+@media (min-width: 970px) {
+  .current-image {
+    width: 80%;
+  }
+}
+
+.next,
+.prev {
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 5rem;
+  cursor: pointer;
+}
+
+.next {
+  right: -3rem;
+}
+
+.prev {
+  left: 2rem;
 }
